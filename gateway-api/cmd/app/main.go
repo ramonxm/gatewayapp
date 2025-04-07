@@ -11,6 +11,8 @@ import (
 	"github.com/ramonxm/gatewayapp/gateway-api/internal/repository"
 	"github.com/ramonxm/gatewayapp/gateway-api/internal/service"
 	"github.com/ramonxm/gatewayapp/gateway-api/internal/web/server"
+
+	_ "github.com/lib/pq"
 )
 
 func getEnv(key, defaultValue string) string {
