@@ -55,7 +55,6 @@ func ToInvoice(input *CreateInvoiceInput, accountId string) (*domain.Invoice, er
 }
 
 func FromInvoice(invoice *domain.Invoice) *InvoiceOutput {
-
 	return &InvoiceOutput{
 		ID:          invoice.ID,
 		AccountID:   invoice.AccountID,
